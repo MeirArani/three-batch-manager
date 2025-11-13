@@ -1,14 +1,14 @@
 {
-  "name": "@mozillareality/three-batch-manager",
+  "name": "@meir_arani/three-batch-manager",
   "license": "MPL-2.0",
   "version": "0.1.10",
   "description": "High level batching / instancing API for ThreeJS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozillareality/three-batch-manager.git"
+    "url": "git+https://github.com/MeirArani/three-batch-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/mozillareality/three-batch-manager/issues"
+    "url": "https://github.com/MeirArani/three-batch-manager/issues"
   },
   "main": "lib/commonjs/index.js",
   "module": "lib/es2015/index.js",
@@ -49,7 +49,7 @@
     "lint-staged": "^9.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "three": "github:mozillareality/three.js#hubs/master",
+    "three": "github:mozillareality/three.js#hubs-patches-147",
     "ts-loader": "^6.0.4",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
@@ -58,5 +58,14 @@
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "keywords": [
+    "three"
+  ],
+  "author": "Hubs Foundation",
+  "homepage": "https://github.com/MeirArani/three-batch-manager#readme"
 }
