@@ -49,7 +49,7 @@ export class BatchRawUniformGroup extends RawUniformsGroup {
 
     let offset = 0;
 
-    this.transforms = new Float32Array(this.data, offset, 4 * maxInstances);
+    this.transforms = new Float32Array(this.data, offset, 16 * maxInstances);
     offset += this.transforms.byteLength;
 
     this.colors = new Float32Array(this.data, offset, 4 * maxInstances);
