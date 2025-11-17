@@ -1,7 +1,7 @@
 {
   "name": "@meir_arani/three-batch-manager",
   "license": "MPL-2.0",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "High level batching / instancing API for ThreeJS",
   "repository": {
     "type": "git",
