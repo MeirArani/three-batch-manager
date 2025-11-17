@@ -12,7 +12,8 @@ import {
   Color,
   Vector4,
   Fog,
-  FogExp2
+  FogExp2,
+  GLSL3
 } from "three";
 import WebGLAtlasTexture from "./WebGLAtlasTexture";
 import { vertexShader, fragmentShader, BatchRawUniformGroup } from "./UnlitBatchShader";
@@ -88,7 +89,8 @@ export class UnlitBatch extends Mesh {
       uniforms: {
         ...opts.sharedUniforms,
         map: { value: atlas }
-      }
+      },
+      glslVersion: GLSL3
     });
 
     material.uniformsGroups = [ubo];
