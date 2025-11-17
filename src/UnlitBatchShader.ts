@@ -9,7 +9,7 @@ import { BatchableMesh } from ".";
 
 const glsl = (x: TemplateStringsArray) => x.join();
 
-export const INSTANCE_DATA_BYTE_LENGTH = 64;
+export const INSTANCE_DATA_BYTE_LENGTH = 112;
 
 export type InstanceID = number;
 
