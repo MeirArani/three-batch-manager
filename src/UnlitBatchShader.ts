@@ -49,17 +49,17 @@ export class BatchRawUniformGroup extends RawUniformsGroup {
 
     let offset = 0;
 
-    this.transforms = new Float32Array(this.data, offset, 16 * maxInstances);
+    this.transforms = new Float32Array(this.data, offset, 4 * maxInstances);
     offset += this.transforms.byteLength;
 
-    this.colors = new Float32Array(this.data, offset, 16 * maxInstances);
+    this.colors = new Float32Array(this.data, offset, 4 * maxInstances);
     offset += this.colors.byteLength;
 
-    this.uvTransforms = new Float32Array(this.data, offset, 16 * maxInstances);
+    this.uvTransforms = new Float32Array(this.data, offset, 4 * maxInstances);
     offset += this.uvTransforms.byteLength;
 
     // [textureIndex, wrapS, wrapT, FREE] vec4 aligned so 4th element is free for use
-    this.mapSettings = new Float32Array(this.data, offset, 16 * maxInstances);
+    this.mapSettings = new Float32Array(this.data, offset, 4 * maxInstances);
     offset += this.mapSettings.byteLength;
 
     this.offset = offset;
