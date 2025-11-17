@@ -156,7 +156,7 @@ export class BatchRawUniformGroup extends RawUniformsGroup {
   }
 }
 
-export const vertexShader = glsl`#version 300 es
+export const vertexShader = glsl`
 precision highp float;
 precision highp int;
 
@@ -215,7 +215,7 @@ void main() {
 }
 `;
 
-export const fragmentShader = glsl`#version 300 es
+export const fragmentShader = glsl`
 precision highp float;
 precision highp int;
 precision highp sampler2DArray;
